@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>JEU 49 — L'art du calcul &amp; du bluff</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary":"#30312e","tertiary-container":"#b4b3af","on-secondary-fixed-variant":"#920023","on-surface-variant":"#d0c5af","error-container":"#93000a","tertiary-fixed":"#e4e2de","outline-variant":"#4d4635","inverse-primary":"#735c00","secondary-container":"#ac012c","on-tertiary-fixed":"#1b1c1a","on-surface":"#e4e1e7","surface-container-high":"#2a292e","inverse-on-surface":"#303034","surface-variant":"#353439","inverse-surface":"#e4e1e7","surface-container":"#1f1f23","secondary":"#ffb3b4","background":"#131317","on-tertiary-container":"#454543","on-secondary-fixed":"#40000a","on-primary":"#3c2f00","error":"#ffb4ab","surface-container-low":"#1b1b1f","tertiary-fixed-dim":"#c8c6c3","surface":"#131317","on-tertiary-fixed-variant":"#474744","surface-tint":"#e9c349","secondary-fixed-dim":"#ffb3b4","on-secondary":"#680016","surface-container-highest":"#353439","primary-fixed-dim":"#e9c349","on-error":"#690005","on-error-container":"#ffdad6","on-background":"#e4e1e7","primary":"#f2ca50","outline":"#99907c","tertiary":"#d0cecb","secondary-fixed":"#ffdad9","surface-container-lowest":"#0e0e12","primary-fixed":"#ffe088","on-secondary-container":"#ffb7b8","surface-bright":"#39393d","on-primary-fixed":"#241a00","surface-dim":"#131317","on-primary-container":"#554300","primary-container":"#d4af37","on-primary-fixed-variant":"#574500"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2.5rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem","margin":"2.5rem","margin-mobile":"1rem","space-md":"1rem","gutter":"1.25rem","space-2xl":"4rem"},"fontFamily":{"body-lg":["Plus Jakarta Sans"],"headline-hero-mobile":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"label-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"],"headline-md":["Playfair Display"],"headline-sm":["Playfair Display"],"card-index":["Playfair Display"],"body-md":["Plus Jakarta Sans"],"headline-hero":["Playfair Display"],"title-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"headline-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"0.01em","fontWeight":"700"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"0.01em","fontWeight":"600"}],"label-md":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"50px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-sm":["22px",{"lineHeight":"30px","letterSpacing":"0em","fontWeight":"600"}],"card-index":["24px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"headline-hero":["56px",{"lineHeight":"68px","letterSpacing":"0.02em","fontWeight":"700"}],"title-lg":["18px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"700"}],"label-lg":["13px",{"lineHeight":"18px","letterSpacing":"0.08em","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_12px_32px_rgba(0,0,0,0.7)]"><div class="h-20 max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-sm group" data-path="accueil" href="#"><div class="w-11 h-11 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shadow-[0_0_15px_rgba(242,202,80,0.2)]"><span class="material-symbols-outlined text-[26px]">diamond</span></div><div class="flex flex-col"><div class="flex items-baseline gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-wider text-primary">JEU 49</span><span class="font-label-md text-label-md text-primary-fixed-dim uppercase tracking-widest">ROYAL</span></div><span class="font-label-md text-label-md text-on-surface-variant font-normal tracking-wide">L'art du calcul &amp; du bluff</span></div></a><div class="hidden 2xl:flex items-center gap-space-md pl-space-lg bg-surface-container-low/70 py-space-xs px-space-md rounded-full"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></span><span class="font-label-md text-label-md text-primary-fixed">2,840</span><span class="font-label-md text-label-md text-on-surface-variant">Joueurs en ligne</span></div><span class="text-outline-variant font-label-md">•</span><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md text-tertiary-fixed">512</span><span class="font-label-md text-label-md text-on-surface-variant">Tables actives</span></div></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container rounded-lg font-label-lg text-label-lg shadow-[0_0_12px_rgba(212,175,55,0.3)]"><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container rounded-lg font-label-lg text-label-lg shadow-[0_0_12px_rgba(212,175,55,0.3)]" data-path="accueil" href="#">Accueil</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-label-lg text-label-lg rounded-lg" data-path="regles-et-tutoriel" href="#">Règles &amp; Tutoriel</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-label-lg text-label-lg rounded-lg" data-path="modes-de-jeu" href="#">Modes de Jeu</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-label-lg text-label-lg rounded-lg" data-path="classements" href="#">Classements</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-label-lg text-label-lg rounded-lg" data-path="boutique-cosmetiques" href="#">Boutique Cosmétiques</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-label-lg text-label-lg rounded-lg" data-path="a-propos" href="#">À Propos</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="hidden sm:inline-flex px-space-md py-space-xs font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="connexion" href="#">Connexion</a><a class="px-space-lg py-space-sm rounded-lg bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider shadow-[0_0_20px_rgba(242,202,80,0.35)] hover:bg-primary-fixed hover:text-on-primary-fixed transition-all active:scale-95" data-path="modes-de-jeu" href="#">Jouer Maintenant</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest py-space-xl lg:py-space-2xl">
+<!-- Atmospheric Ambient Glows -->
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[720px] rounded-full bg-primary/10 blur-[140px] pointer-events-none"></div>
+<div class="absolute -bottom-24 right-0 w-[480px] h-[480px] rounded-full bg-secondary-container/15 blur-[120px] pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<!-- Live Metrics Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-xl p-space-sm bg-surface-container/60 rounded-xl shadow-md">
+<div class="flex items-center gap-space-sm px-space-md py-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-lg text-label-lg text-primary tracking-wider">3,428</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Joueurs en duel direct</span>
+</div>
+<div class="h-4 w-px bg-surface-container-highest hidden sm:block"></div>
+<div class="flex items-center gap-space-sm px-space-md py-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">query_stats</span>
+<span class="font-label-lg text-label-lg text-tertiary-fixed">128,490</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Parties menées aujourd'hui</span>
+</div>
+<div class="h-4 w-px bg-surface-container-highest hidden md:block"></div>
+<div class="flex items-center gap-space-sm px-space-md py-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary font-card-index text-[12px]">49.0</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Dernier crash fatal enregistré</span>
+</div>
+</div>
+<!-- Main Hero Content Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Narrative Column -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high w-fit shadow-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">stars</span>
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">L'Édition Impériale</span>
+<span class="font-label-md text-label-md text-on-surface-variant">• Règle Anti-Horaire Officielle</span>
+</div>
+<h1 class="font-headline-hero text-headline-hero text-on-surface leading-tight">
+            Ne franchissez jamais <span class="text-primary italic">49</span>.<br/>
+            Maîtrisez le destin.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            L'affrontement de salon transcendant le calcul mental, le sang-froid et la psychologie royale. Dans le sens anti-horaire, chaque seconde compte avant la déflagration du compte fatidique.
+          </p>
+<!-- CTAs Group -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="px-space-xl py-space-md rounded-lg bg-primary text-on-primary font-label-lg text-label-lg tracking-wider uppercase transition-all shadow-xl hover:bg-primary-fixed hover:scale-[1.02] active:scale-95 flex items-center gap-space-sm" href="#table-preview">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>Rejoindre une Partie Rapide</span>
+</a>
+<a class="px-space-lg py-space-md rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg tracking-wider uppercase transition-all hover:bg-surface-variant active:scale-95 flex items-center gap-space-sm" href="#modes">
+<span class="material-symbols-outlined text-primary text-[20px]">lock</span>
+<span>Créer une Table Privée</span>
+</a>
+</div>
+<!-- Quick Rule Link with Micro-Indicator -->
+<div class="flex items-center gap-space-md pt-space-xs text-on-surface-variant">
+<a class="font-title-md text-title-md text-primary flex items-center gap-space-xs hover:text-primary-fixed transition-colors" href="#regles">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+<span>Comprendre les règles en 60 secondes chrono</span>
+</a>
+<span class="text-outline-variant">•</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">2 à 6 Joueurs</span>
+</div>
+</div>
+<!-- Right Visual Showcase: Dynamic Card Fan -->
+<div class="lg:col-span-5 relative flex items-center justify-center min-h-[440px] lg:min-h-[520px]">
+<div class="relative w-full max-w-[420px] h-[460px] flex items-center justify-center">
+<!-- Card 1: 4 of Clubs (Far Left) -->
+<div class="absolute w-[160px] sm:w-[190px] rounded-xl shadow-xl -left-4 sm:left-2 -rotate-[22deg] -translate-y-4 hover:translate-y-[-24px] hover:z-30 hover:rotate-[-16deg] transition-all duration-300 cursor-pointer overflow-hidden bg-surface-container-low">
+<img alt="4 de Trèfle géométrique" class="w-full h-auto object-cover select-none pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQCS4CYFPrREPuezwHO5KwGFk5YKg2Q90R9Dt4vhqJp8spKHP2SAmPUm3dT7MrSAiPmpBJ6jna64uFz1DiCpr8Y-GNLZ-DvK9j2kIQHbew1C-DV-N19Ry0kmHjquuHEtIw1vpZHVZoSNnZc8Myppoxo-kKuUZ1tm0sFYT2Ss8ZIHPfq-gdT65Ku2yt1Ogjlpqnqhwn2gZWxc8FGVtuk0TRKCUi1nHwsr1AnCU0g4XdMmVIEkwd1H8I"/>
+</div>
+<!-- Card 2: 4 of Diamonds (Left Center) -->
+<div class="absolute w-[160px] sm:w-[190px] rounded-xl shadow-xl left-10 sm:left-14 -rotate-[10deg] -translate-y-8 hover:translate-y-[-28px] hover:z-30 hover:rotate-[-4deg] transition-all duration-300 cursor-pointer overflow-hidden bg-surface-container-low">
+<img alt="4 de Carreau rubis" class="w-full h-auto object-cover select-none pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4TYPEF8-4MGC07LyGNf8icERI-p1W8zGQk09HuH7Z1q_PRlKFD3zrYEI4PDQ4u_hk0ZXBO3uYvj8avGnbi1EyvO7B3uvhas6Vb3GYQYV9FG9KOH72e7M2GCSkGR76zwvUNKdUU1bwb_MoLNBeos39O7MQid9w4jTsW3TFqlYrQkw3arsdsbA7vgCN8-4glEV9K2qLJX7Lo8-T48iZ9LJ5pFTWXt-p0SixjVWGDyWNhsHV6CuZf88l"/>
+</div>
+<!-- Card 3: Ace of Spades (Centerpiece Crown) -->
+<div class="absolute w-[180px] sm:w-[210px] rounded-xl shadow-2xl z-20 rotate-0 -translate-y-12 hover:translate-y-[-32px] hover:scale-105 transition-all duration-300 cursor-pointer overflow-hidden bg-surface-container-low">
+<img alt="As de Pique Or et Noir" class="w-full h-auto object-cover select-none pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRI8h-7jUtd0lhlQYXbjc4ufsMXQwMb9ub0CoB4_SoNuOx_BIJUIrKFfiowiQ2pNrG_4xFR9rvAuH4AEUILa_HnF7d339w7FjKJTtspVqnxEaqbb_oLwpnhpSMX8HdDiiP8bAI3tj2EQ42SC-i7M34Jzmhj0ACXQUp8s80xdaD4HsJVKA_Dflck7g9GmOTuDCjmkwttn95rWhP49rkFvzifM984gCHh6X2B6bXwNSP6c01g7a4_xDn"/>
+</div>
+<!-- Card 4: Joker Queen (Right Center) -->
+<div class="absolute w-[160px] sm:w-[190px] rounded-xl shadow-xl right-10 sm:right-14 rotate-[10deg] -translate-y-8 hover:translate-y-[-28px] hover:z-30 hover:rotate-[4deg] transition-all duration-300 cursor-pointer overflow-hidden bg-surface-container-low">
+<img alt="Joker Reine Royale" class="w-full h-auto object-cover select-none pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnMx0DBHT4zHT2Vdv9r3T5cYxYVkU3ybNEgeIY85B7y8NoyBLrjY03TwX0W9YgxpZ2nHe9C8-0kmTOhCn72vqsoFr-a1N2r0k21YMISsY-cOGVfhV4klfOs_sdmVIxvy3BvV1OjmblCMxLsymlIIn9z15nkioNiIIdNd0fXl-UinDTeibjaCidIFMdwc7z-ULYB5FpC0Ic6_T8Pzf5eqFHLjjhTlkf5uoOZvKplARg895r7UGcchR0"/>
+</div>
+<!-- Card 5: Joker King (Far Right) -->
+<div class="absolute w-[160px] sm:w-[190px] rounded-xl shadow-xl -right-4 sm:right-2 rotate-[22deg] -translate-y-4 hover:translate-y-[-24px] hover:z-30 hover:rotate-[16deg] transition-all duration-300 cursor-pointer overflow-hidden bg-surface-container-low">
+<img alt="Joker Roi Royal" class="w-full h-auto object-cover select-none pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe5RwK00xxbLEraibXCVxHG8NQCklH6GCWeyVG_CPAasXb0QPMC2mhWu_POBJEAvO7EVAfCWTtd6YjlFmzcHCqbHiQHWyGwVze0Ewl7Jp0NB5bhGV6a3tU9qpA3FffAzCI0bExu8v_qo1un8_xICTa3icJr2FAA-09OQIdAzO1JbgRw_YA231JZnopBlyTGtAZNIwxFvNXQfIA4ZgceAXxJe_5uixYy34ngqgiadLaMqFTgyw1CNAU"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- GAMEPLAY MECHANICS SECTION -->
+<section class="w-full py-space-2xl bg-surface-container-low relative" id="regles">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">Architecture Tactique</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Les Règles d'Or du Jeu 49</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Chaque mouvement modifie l'équilibre universel. L'erreur de calcul se paie par l'éviction sans appel.
+        </p>
+</div>
+<!-- 3 Strategic Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-space-xl">
+<!-- Pillar 1 -->
+<div class="flex flex-col justify-between p-space-xl rounded-xl bg-surface-container shadow-md group hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">rotate_left</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary tracking-wider uppercase">Dynamique Inversée</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Le Sens Anti-Horaire</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Contrairement à la majorité des jeux de cartes séculaires, le 49 se joue de droite à gauche. Anticipez la main de votre voisin direct et déjouez ses pièges avant qu'il ne vous transmette le fardeau.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase tracking-wider">
+<span>Sens de rotation sacré</span>
+<span class="material-symbols-outlined text-[16px]">trending_flat</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="flex flex-col justify-between p-space-xl rounded-xl bg-surface-container shadow-md group hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">speed</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-secondary tracking-wider uppercase">L'Accumulation</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">La Limite Fatidique de 49</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Chaque carte déposée ajoute immédiatement sa valeur nominale au pot commun (0 à 49). Tout joueur forcé de poser une carte qui porte le total à 50 ou plus est immédiatement éliminé de la manche.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center gap-space-xs text-secondary font-label-md text-label-md uppercase tracking-wider">
+<span>Seuil de non-retour : 49</span>
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="flex flex-col justify-between p-space-xl rounded-xl bg-surface-container shadow-md group hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-fixed group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">auto_awesome</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary-fixed tracking-wider uppercase">Tactiques Majeures</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Les Cartes d'Impact</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Certaines figures brisent la loi d'addition linéaire. Le 9 gèle le total, le 10 recule le compte de 10 points précieux, tandis que les Jokers Impériaux réécrivent instantanément la réalité du jeu.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center gap-space-xs text-primary-fixed font-label-md text-label-md uppercase tracking-wider">
+<span>Ruptures de rythme</span>
+<span class="material-symbols-outlined text-[16px]">casino</span>
+</div>
+</div>
+</div>
+<!-- Card Value Reference Table / Grid -->
+<div class="p-space-lg bg-surface-container rounded-xl shadow-lg">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">format_list_bulleted</span>
+<h4 class="font-title-lg text-title-lg text-on-surface">Guide des Effets &amp; Valeurs des Cartes</h4>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Règlement Officiel v2.5</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="flex flex-col p-space-md bg-surface-container-high rounded-lg">
+<div class="flex items-baseline justify-between mb-space-xs">
+<span class="font-card-index text-[20px] text-primary">Cartes 1 à 8</span>
+<span class="font-label-md text-label-md text-primary px-space-xs py-0.5 rounded bg-surface-container">+1 à +8</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Ajout Nominal</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Chaque chiffre ajoute sa stricte valeur au compteur global. Idéal pour faire grimper subtilement la pression.
+            </p>
+</div>
+<div class="flex flex-col p-space-md bg-surface-container-high rounded-lg">
+<div class="flex items-baseline justify-between mb-space-xs">
+<span class="font-card-index text-[20px] text-primary">Carte 9</span>
+<span class="font-label-md text-label-md text-tertiary px-space-xs py-0.5 rounded bg-surface-container">0 Évolution</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">L'Effet Maintien</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Le compteur reste rigoureusement intact. Passe la main au joueur suivant sans altérer le fardeau.
+            </p>
+</div>
+<div class="flex flex-col p-space-md bg-surface-container-high rounded-lg">
+<div class="flex items-baseline justify-between mb-space-xs">
+<span class="font-card-index text-[20px] text-secondary">Carte 10</span>
+<span class="font-label-md text-label-md text-secondary px-space-xs py-0.5 rounded bg-surface-container">-10 Points</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">L'Effet Sauveur</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Soustrait 10 points instantanément au total central (avec un plancher incompressible à 0). L'échappatoire ultime.
+            </p>
+</div>
+<div class="flex flex-col p-space-md bg-surface-container-high rounded-lg">
+<div class="flex items-baseline justify-between mb-space-xs">
+<span class="font-card-index text-[20px] text-primary">Joker Royal</span>
+<span class="font-label-md text-label-md text-primary px-space-xs py-0.5 rounded bg-surface-container">Arbitraire 0-49</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Le Maître Absolu</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Autorise son détenteur à décréter manuellement n'importe quel nouveau chiffre entre 0 et 49. Domination totale.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE DECK & ROYAL EDITIONS GALLERY -->
+<section class="w-full py-space-2xl bg-surface-container-lowest">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">Écrin de Prestige</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">La Galerie des Cartes Royales</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-md py-space-xs rounded-full bg-surface-container text-primary-fixed-dim font-label-md text-label-md">
+            ◆ Dorure &amp; Ébène
+          </span>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md">
+            Haute Définition Tactile
+          </span>
+</div>
+</div>
+<!-- 6-Card Presentation Grid with actual assets -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-gutter">
+<!-- Card Item 1: As de Pique -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all">
+<div class="relative w-full aspect-[9/14] bg-surface-container-high overflow-hidden">
+<img alt="As de Pique Or &amp; Noir" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxdTYM5tY3uakQRDamhN-63sJCnYDm3cPlnEkCEsOyI2urJWYgXaQ4XPJxGIZBqSdFxvbICzSQ7zYFgw-1xfxZ56bfpQ5HtgnCWUe7OMYgdOb1tcYpwv89N16DDriH4AJYSruWPlFOIO-Q_0nhels6cgbThfLjTxaxn-R1XmmrmUSZkgldftnl2fZSW2hPOuqfso63bpORGJShITwVMb6MmI4tiIRWYKYQ69QbrDxs8RxzTkMlywsq"/>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur font-label-md text-label-md text-primary">
+              AS
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">As de Pique</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Valeur : 1 • Symbole Alpha</span>
+</div>
+</div>
+<!-- Card Item 2: Joker Reine -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all">
+<div class="relative w-full aspect-[9/14] bg-surface-container-high overflow-hidden">
+<img alt="Joker Reine Royale" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjd6XuH8woiOpBLmVAo2fMax-o7Gsf0g9AXI0MPj04k3yOFfJm2GIEA6KSqGT9zF370PIAX2Xr0eoHpwAG0Q5dzdG9hVHdL31wcqmeb48gSihGFNCijHZvKzWM7fEzyJxKjiO9FdzMFNl8PLEn4jr1U3k-0a5ONp4_YKE_Zhd46ZC5I7leAYpeGRMPbfjouWxx-ABcnk4OKpYxBqIZqUhfrppTyrjEWF7KcnAZud2h-rHKphpNiFHf"/>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-secondary-container/90 backdrop-blur font-label-md text-label-md text-on-secondary">
+              REINE
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Joker Reine</span>
+<span class="font-label-md text-label-md text-primary">Pouvoir Créateur 0-49</span>
+</div>
+</div>
+<!-- Card Item 3: Joker Roi -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all">
+<div class="relative w-full aspect-[9/14] bg-surface-container-high overflow-hidden">
+<img alt="Joker Roi Royal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIkkMwFmxUXn7n8nnp_aFWD0l_hrVL5kMidLai_QXqMs8u8NMDhasKKNU3xODRucKIr3HmpQEF3QZCrf-V27V0MRcZ3isckfUSW3WWbwO-M3PNwRM-ePJkIlLUGtCwvpLDFXUD9GFVRMz3P-p4dmEDUQaq3AKV6Zs7vQLhdr_FFn0DQSkAYCc3aV_4YxMXWDLHY0u7tg4_dTSkSrm8pC4dBwd8d-1lzgfZSTZ7tik_mrTCLdG9T1eb"/>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-primary/90 text-on-primary backdrop-blur font-label-md text-label-md">
+              ROI
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Joker Roi</span>
+<span class="font-label-md text-label-md text-primary">Souveraineté Absolue</span>
+</div>
+</div>
+<!-- Card Item 4: 4 de Trèfle -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all">
+<div class="relative w-full aspect-[9/14] bg-surface-container-high overflow-hidden">
+<img alt="4 de Trèfle géométrique" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOzgWdLl-PJVT2PwwecxFa3clm0s0K3ZT4PBUiTOYHbC5v7FcOgxCBEZPWCjK52G2-bA9xeuhp0I_szFWvgz4wvoCocUuwLNNNuCHc-SlvNoDLqQqvdF47Ji_QJTXRmorck5mcjrA_LOM82UG2AFCHPF05LmIdH2z9OdB4t-HNdpGZWpbLhr-I78CV9KWGxoXr6CSnfFZj4gc_PEHk-yrkXQd_Z_8fB9Iigtt-BY9197jlh80hwZnW"/>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur font-label-md text-label-md text-on-surface">
+              +4
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">4 de Trèfle</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Précision Géométrique</span>
+</div>
+</div>
+<!-- Card Item 5: 4 de Carreau -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all">
+<div class="relative w-full aspect-[9/14] bg-surface-container-high overflow-hidden">
+<img alt="4 de Carreau rubis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzDhNj5_BLtpKOVZ65Qqt3sz0kxPEVr_ZF5TWAOS1uidc8bm2DNILCMJNGx8d3elJRsMtUjAywgnhn7_vYU5huB1iWVMXgJu7vKr7a8uck4MQ5laAnBvOz5FF39V2yvziXNv-szkKD6SYq-C9zOXs5_xUYHpWk7IF_kNv0Cyf2HRJH13rDSS__1wSI8S1akui-hn5W-Xb0Adwn2gDaVX3XT-LC0XYW5gnGnuM1cKCCBZgntdNZgz0B"/>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-secondary-container/90 font-label-md text-label-md text-on-secondary">
+              +4
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">4 de Carreau</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Facette Rubis Lumineuse</span>
+</div>
+</div>
+<!-- Card Item 6: 4 de Cœur -->
+<div class="group flex flex-col bg-surface-container rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all">
+<div class="relative w-full aspect-[9/14] bg-surface-container-high overflow-hidden">
+<img alt="4 de Cœur rubis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMCTkAQBVdsKzxSnOKNt57bzmSpS7UevfEI-DafyP5Moj-Ar07luEjPePqi-k_txiYZiZ1ssny4rsDvtBgASupDWGVatj04oRra3FJvv_1p5w4mL-qvW0SNLS3a6dLm0Pu4pvkowXJMLu_erPkMPd7A8wu3wKhI0noQxGWkkaDWxmVxP7SWdS9uG6sO7nwEtPfkPZJfVroNRXSGaESl-AjwdTbx4quiQ7V5RBz6E_MtwQfOl8jQgnl"/>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-secondary-container/90 font-label-md text-label-md text-on-secondary">
+              +4
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">4 de Cœur</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Cœur Flamboyant &amp; Or</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TABLE GAMEPLAY SNEAK PEEK (CIRCULAR BOARD + RADIAL DIAL) -->
+<section class="w-full py-space-2xl bg-surface relative overflow-hidden" id="table-preview">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col items-center text-center gap-space-xs mb-space-xl">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">Immersion Tactique</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">L'Arène du Jeu 49 en Pleine Tension</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+          Compteur central en zone critique (45/49). Le tour tourne dans le sens anti-horaire : préparez votre riposte.
+        </p>
+</div>
+<!-- Simulated Game Table Arena Board -->
+<div class="w-full max-w-4xl mx-auto rounded-xl bg-surface-container-lowest p-space-md md:p-space-xl relative shadow-2xl overflow-hidden">
+<!-- Table Mat Background Pattern -->
+<div class="w-full min-h-[460px] md:min-h-[540px] rounded-lg bg-surface-container-low flex flex-col justify-between items-center p-space-lg relative">
+<!-- Top Rival Player (Nord) -->
+<div class="flex flex-col items-center gap-space-xs z-10">
+<div class="relative">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-primary shadow-md">
+<span class="material-symbols-outlined text-[28px]">account_circle</span>
+</div>
+<span class="absolute -bottom-1 -right-1 px-1.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-md text-label-md">
+                3 cartes
+              </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Baron K.</span>
+<span class="text-tertiary font-label-md text-label-md">(1840 ELO)</span>
+</div>
+</div>
+<!-- Mid Section: West Player, Center Dial, East Player -->
+<div class="w-full flex items-center justify-between px-space-xs md:px-space-md z-10">
+<!-- Left Rival (West) -->
+<div class="flex flex-col items-center gap-space-xs">
+<div class="relative">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant shadow-md">
+<span class="material-symbols-outlined text-[24px]">smart_toy</span>
+</div>
+<span class="absolute -bottom-1 -right-1 px-1.5 py-0.5 rounded-full bg-surface-container-highest text-tertiary-fixed font-label-md text-label-md">
+                  2 cartes
+                </span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">IA Grand-Maître</span>
+</div>
+<!-- Central Pot / 0-49 Gauge -->
+<div class="relative flex flex-col items-center justify-center w-52 h-52 md:w-64 md:h-64 rounded-full bg-surface-container shadow-2xl">
+<!-- Radial Dial Visualization -->
+<svg class="w-full h-full -rotate-90 absolute inset-0" viewbox="0 0 100 100">
+<!-- Background Ring -->
+<circle class="text-surface-container-highest" cx="50" cy="50" fill="none" r="42" stroke="currentColor" stroke-width="5"></circle>
+<!-- Progress Ring: 45 / 49 = ~91.8% of circumference (264) -> dashoffset 21 -->
+<circle class="text-secondary-container" cx="50" cy="50" fill="none" r="42" stroke="currentColor" stroke-dasharray="264" stroke-dashoffset="22" stroke-linecap="round" stroke-width="6"></circle>
+</svg>
+<!-- Central Digital Score readout -->
+<div class="flex flex-col items-center text-center z-10">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase animate-pulse">Zone Rouge</span>
+<span class="font-headline-hero text-headline-hero text-primary leading-none my-1">45</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant">MAX 49</span>
+</div>
+<!-- Counter-Clockwise Animated Indicator -->
+<div class="absolute -top-3 px-space-sm py-0.5 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-[14px]">rotate_left</span>
+<span>Tour Anti-Horaire</span>
+</div>
+</div>
+<!-- Right Rival (East) -->
+<div class="flex flex-col items-center gap-space-xs">
+<div class="relative">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary-fixed shadow-md">
+<span class="material-symbols-outlined text-[24px]">face_6</span>
+</div>
+<span class="absolute -bottom-1 -right-1 px-1.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md">
+                  Actif
+                </span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Amina_49</span>
+</div>
+</div>
+<!-- Bottom: Active Player Hand Interface -->
+<div class="flex flex-col items-center gap-space-sm z-10 w-full pt-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg tracking-wider">
+                VOTRE MAIN • À VOUS DE JOUER (08s)
+              </span>
+</div>
+<!-- Hand of 3 Cards with dynamic interactive elevation -->
+<div class="flex items-center justify-center -space-x-8 sm:-space-x-12 pt-space-xs">
+<!-- Hand Card 1 -->
+<div class="w-24 sm:w-28 rounded-lg overflow-hidden shadow-xl -rotate-6 hover:-translate-y-6 hover:rotate-0 hover:z-30 transition-all cursor-pointer bg-surface-container-high">
+<img alt="4 de Trèfle en main" class="w-full h-auto object-cover select-none pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVhlS73en8Miu2fO0BoKSyJ2LmqJktBKFUqeYqG2i79cQH_a5mPffMn0YDvNv-mmpUlL8aJZQ6JRuq0NH1gs3wMm4hShz7Zvof718c2H7xPtzLucOo1JS6tdA5QFQNzblgZ8RTJuZy5-1G9TcovkpCZjEhWcMjojzwk7PH6tHgdXhayTQyvZJpx_1ws69DIAiy_OZI1LJPKzzvziPrRoengkGVXCtXKmz83cYpaa4kPXY60Cxlt4xt"/>
+</div>
+<!-- Hand Card 2 (Active/Selected) -->
+<div class="w-24 sm:w-28 rounded-lg overflow-hidden shadow-2xl -translate-y-3 hover:-translate-y-8 hover:z-30 transition-all cursor-pointer bg-surface-container-high">
+<img alt="Joker Reine en main" class="w-full h-auto object-cover select-none pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvGutA4dZJn2HHVtIXO6to-FH8PavQ9CmPloWzSSe7bpqRlUjzsoYmSopMobwe4bTb_rsLV9_gYs9kP3_JPAvvefF4996nBLur_Q9mXdtG_vIRkYYTHQT8ghoGpqTOCeHSJnjaLzxG2iz32pjOf6Vx81rvWsu5hP9W_Uu-nZ46no_mIoiiBEiyqk2idRLDsH-iK5sEb3N6pYzQe3MR8VtBO8U0IjKluKXutcPalH-nYvzwe55V_M_U"/>
+</div>
+<!-- Hand Card 3 -->
+<div class="w-24 sm:w-28 rounded-lg overflow-hidden shadow-xl rotate-6 hover:-translate-y-6 hover:rotate-0 hover:z-30 transition-all cursor-pointer bg-surface-container-high">
+<img alt="4 de Cœur en main" class="w-full h-auto object-cover select-none pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgWshmKw8phFsqAPxWQCXSPWMUfx7XFNnrfTacrQNjgZ3Wvigc3pXIv1P3gJgtq9PM_GmMlWObD66dxTszzNnDCYdweS5LcCl_v79swNJPb3M--EGDLZZry_ujceVHkNsn-pH2sEYObSEyVYRl__u_UL9bquFeZu7u6-EKUztOEc3pquTtK3nKqEA-o28olajKM5F9x4fKwFD_MUYy6ruoFIRljIHpsbmTCElZ2eWVkJyVV1LyPY3D"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- GAME MODES SELECTION -->
+<section class="w-full py-space-2xl bg-surface-container-low" id="modes">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">Choisissez votre Arène</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Les Modes de Jeu</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Du match classé officiel aux affrontements privés sous serment, trouvez la configuration adaptée à votre style.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Mode 1: Quick & Ranked Match -->
+<div class="flex flex-col justify-between p-space-xl rounded-xl bg-surface-container shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]">trophy</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest">Matchmaking ELO</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Partie Rapide &amp; Classée</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Rejoignez une table en moins de 5 secondes. Matchs intenses à 4 joueurs avec minuterie stricte de 15 secondes par coup. Grimpez vers l'Ordre des Rois.
+            </p>
+<div class="flex flex-wrap gap-space-xs mt-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-label-md text-label-md text-tertiary">2 à 4 Joueurs</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-label-md text-label-md text-tertiary">Points ELO en jeu</span>
+</div>
+</div>
+<div class="mt-space-xl">
+<button class="w-full py-space-sm rounded-lg bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider shadow-md hover:bg-primary-fixed transition-colors">
+              Lancer le Match
+            </button>
+</div>
+</div>
+<!-- Mode 2: Private Rooms -->
+<div class="flex flex-col justify-between p-space-xl rounded-xl bg-surface-container shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]">vpn_key</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary-fixed-dim uppercase tracking-widest">Entre Connaisseurs</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Salons Privés (Code Secret)</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Générez une salle protégée par code à partager avec vos pairs. Ajustez la durée des tours, le nombre de cartes et conviez jusqu'à 6 stratèges.
+            </p>
+<div class="flex flex-wrap gap-space-xs mt-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-label-md text-label-md text-tertiary">2 à 6 Joueurs</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-label-md text-label-md text-tertiary">Règles Libres</span>
+</div>
+</div>
+<div class="mt-space-xl">
+<button class="w-full py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg uppercase tracking-wider hover:bg-surface-variant transition-colors">
+              Créer ou Rejoindre
+            </button>
+</div>
+</div>
+<!-- Mode 3: AI Training Dojo -->
+<div class="flex flex-col justify-between p-space-xl rounded-xl bg-surface-container shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-highest text-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]">psychology</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-widest">Laboratoire de Calcul</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Entraînement contre l'IA</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Testez vos réflexes face à des moteurs de probabilités prédictifs réglés sur 3 niveaux d'agressivité. Sans chronomètre pour affiner vos théories.
+            </p>
+<div class="flex flex-wrap gap-space-xs mt-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-label-md text-label-md text-tertiary">Solo Hors-Ligne</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-label-md text-label-md text-tertiary">3 Niveaux d'IA</span>
+</div>
+</div>
+<div class="mt-space-xl">
+<button class="w-full py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg uppercase tracking-wider hover:bg-surface-variant transition-colors">
+              Ouvrir le Dojo
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- COMMUNITY & GLOBAL RANKINGS PODIUM -->
+<section class="w-full py-space-2xl bg-surface-container-lowest">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left: Global Leaderboard Snapshot -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">L'Ordre des Rois</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Classement Mondial de la Saison I</h2>
+</div>
+<div class="flex flex-col gap-space-xs bg-surface-container rounded-xl p-space-md shadow-lg">
+<!-- Rank 1 -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-space-md">
+<span class="font-headline-sm text-headline-sm text-primary w-6 text-center">1</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Mael_LeStratège</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Kinshasa • 412 Victoires</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-title-lg text-title-lg text-primary">2,490</span>
+<span class="font-label-md text-label-md text-tertiary uppercase">ELO</span>
+</div>
+</div>
+<!-- Rank 2 -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container">
+<div class="flex items-center gap-space-md">
+<span class="font-headline-sm text-headline-sm text-tertiary-fixed w-6 text-center">2</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">military_tech</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Queen_Zola</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Bruxelles • 378 Victoires</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-title-lg text-title-lg text-on-surface">2,385</span>
+<span class="font-label-md text-label-md text-tertiary uppercase">ELO</span>
+</div>
+</div>
+<!-- Rank 3 -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container">
+<div class="flex items-center gap-space-md">
+<span class="font-headline-sm text-headline-sm text-secondary w-6 text-center">3</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">military_tech</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Ndombe_49</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Paris • 345 Victoires</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-title-lg text-title-lg text-on-surface">2,298</span>
+<span class="font-label-md text-label-md text-tertiary uppercase">ELO</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Testimonial & Quotes -->
+<div class="lg:col-span-5 flex flex-col gap-space-md p-space-xl rounded-xl bg-surface-container shadow-xl">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface italic leading-snug">
+            « Le Jeu 49 remplace les échecs et le poker lors de nos soirées. Le sens anti-horaire couplé à la terreur de franchir 49 crée une adrénaline qu'aucun autre jeu de cartes n'offre. »
+          </p>
+<div class="flex items-center gap-space-md pt-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">person</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary">David Mukendi</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Champion du Tournoi Inaugural 2024</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CREATORS SIGNATURE & FINAL CALL-TO-ACTION -->
+<section class="w-full py-space-2xl bg-surface-container relative overflow-hidden">
+<!-- Glow Backdrop -->
+<div class="absolute inset-0 bg-radial from-primary/5 via-transparent to-transparent pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin text-center flex flex-col items-center gap-space-lg relative z-10">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-primary shadow-xl">
+<span class="material-symbols-outlined text-[36px]">workspace_premium</span>
+</div>
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">Héritage &amp; Conception</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Une Création Originale de Maîtres</h2>
+<p class="font-title-lg text-title-lg text-primary font-bold">
+          Alphonse MUMBA &amp; Peniel KAMWANYA
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Né de la volonté de doter les passionnés de cartes d'un jeu fondé sur la pure intelligence collective, le calcul dynamique et l'art de la prestidigitation mentale.
+        </p>
+</div>
+<!-- Final Master CTA Box -->
+<div class="w-full max-w-xl p-space-xl rounded-xl bg-surface-container-lowest shadow-2xl flex flex-col items-center gap-space-md mt-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Prenez place à la table impériale</span>
+<p class="font-body-md text-body-md text-on-surface-variant text-center">
+          Aucun téléchargement requis. Jouez instantanément sur navigateur ou mobile.
+        </p>
+<div class="flex flex-col sm:flex-row items-center gap-space-md w-full justify-center pt-space-xs">
+<a class="w-full sm:w-auto px-space-xl py-space-md rounded-lg bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider shadow-lg hover:bg-primary-fixed transition-all text-center" href="#table-preview">
+            Commencer en Invité
+          </a>
+<button class="w-full sm:w-auto px-space-lg py-space-md rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg uppercase tracking-wider hover:bg-surface-container-high transition-all">
+            Créer un Compte Sauvegardé
+          </button>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface"><div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin pt-space-2xl pb-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-gutter mb-space-2xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[22px]">diamond</span></div><span class="font-headline-sm text-headline-sm text-primary tracking-wider">JEU 49</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">L'expérience ultime de calcul mental, de tactique d'équipe et de haute psychologie de cour. Maîtrisez le 49, défiez le sens anti-horaire et devenez Roi.</p><div class="mt-space-xs flex flex-col gap-space-xs"><span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Auteurs &amp; Conception</span><p class="font-title-md text-title-md text-primary">Alphonse MUMBA &amp; Peniel KAMWANYA</p><span class="font-label-md text-label-md text-tertiary">Tous droits réservés © 2025</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-widest text-primary">Jeu</span><div class="flex flex-col gap-space-xs"><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="partie-rapide" href="#">Partie Rapide</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="tournois" href="#">Tournois</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="salons-prives" href="#">Salons Privés</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="entrainement-ia" href="#">Entraînement IA</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-widest text-primary">Règles</span><div class="flex flex-col gap-space-xs"><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="valeurs-des-cartes" href="#">Valeurs des cartes</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="regle-du-49" href="#">Règle du 49</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="sens-anti-horaire" href="#">Sens anti-horaire</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="faq-regles" href="#">FAQ Tactique</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-widest text-primary">Communauté</span><div class="flex flex-col gap-space-xs"><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="discord" href="#">Discord Officiel</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="classements" href="#">Classement mondial</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="charte-fair-play" href="#">Charte Fair-play</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="rejoindre-guilde" href="#">Ordre des Rois</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-widest text-primary">Légal &amp; Support</span><div class="flex flex-col gap-space-xs"><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="mentions-legales" href="#">Mentions Légales</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="confidentialite" href="#">Confidentialité</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="support-joueur" href="#">Support Joueur</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="conditions-generales" href="#">CGU</a></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant">© 2025 JEU 49 Interactive. Tous droits réservés.</span></div><div class="flex items-center gap-space-md"><div class="px-space-md py-space-xs rounded-full bg-surface-container-high text-primary-fixed-dim font-label-md text-label-md flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">devices</span><span>Made for Web &amp; Mobile</span></div><div class="px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">verified</span><span>Édition Officielle</span></div></div></div></div></footer></body></html>
